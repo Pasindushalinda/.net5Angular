@@ -1,5 +1,3 @@
-import { AdminService } from './../../_services/admin.service';
-import { User } from './../../_models/user';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-panel.component.css']
 })
 export class AdminPanelComponent implements OnInit {
-  
 
   constructor() { }
 

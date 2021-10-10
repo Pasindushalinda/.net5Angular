@@ -1,6 +1,6 @@
-import { RolesModalComponent } from './../../modals/roles-modal/roles-modal.component';
 import { Component, OnInit } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { RolesModalComponent } from 'src/app/modals/roles-modal/roles-modal.component';
 import { User } from 'src/app/_models/user';
 import { AdminService } from 'src/app/_services/admin.service';
 
@@ -50,9 +50,9 @@ export class UserManagementComponent implements OnInit {
     const roles = [];
     const userRoles = user.roles;
     const availableRoles: any[] = [
-      { name: 'Admin', value: 'Admin' },
-      { name: 'Moderator', value: 'Moderator' },
-      { name: 'Member', value: 'Member' }
+      {name: 'Admin', value: 'Admin'},
+      {name: 'Moderator', value: 'Moderator'},
+      {name: 'Member', value: 'Member'}
     ];
 
     availableRoles.forEach(role => {
